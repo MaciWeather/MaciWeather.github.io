@@ -3,184 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - Centro CS</title>
+    <title>Política de Privacidad | Centro CS</title>
     <style>
         :root {
-            --primary: #2c3e50;
-            --accent: #16a085;
-            --bg: #f4f6f7;
-            --text: #2c3e50;
-            --card-bg: #ffffff;
+            --primary-color: #1e293b; /* Azul/Gris oscuro institucional */
+            --accent-color: #0284c7;  /* Azul para enlaces e indicaciones */
+            --bg-color: #ffffff;      /* Fondo limpio */
+            --bg-soft: #f8fafc;       /* Gris muy suave para bloques */
+            --text-color: #334155;    /* Texto gris oscuro elegante */
+            --border-color: #e2e8f0;  /* Líneas divisorias finas */
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: var(--bg);
-            color: var(--text);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
         }
         header {
-            background: linear-gradient(135deg, var(--primary), #34495e);
-            color: white;
-            text-align: center;
-            padding: 2.5rem 1rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
         }
-        header h1 {
+        h1 {
+            color: var(--primary-color);
+            font-size: 2.2rem;
+            margin: 0 0 0.5rem 0;
+        }
+        .meta-date {
+            color: #64748b;
+            font-size: 0.95rem;
             margin: 0;
-            font-size: 2rem;
         }
-        header p {
-            margin: 0.5rem 0 0 0;
-            font-size: 1rem;
-            opacity: 0.9;
-        }
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1.5rem;
-        }
-        .card {
-            background: var(--card-bg);
-            padding: 2.5rem;
+        .contents-box {
+            background-color: var(--bg-soft);
+            border: 1px solid var(--border-color);
             border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+        .contents-box h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+        .contents-box ol {
+            margin: 0;
+            padding-left: 1.2rem;
+        }
+        .contents-box li {
+            margin-bottom: 0.4rem;
+        }
+        .contents-box a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        .contents-box a:hover {
+            text-decoration: underline;
+            color: var(--accent-color);
         }
         h2 {
-            color: var(--primary);
-            border-bottom: 2px solid #eaeded;
-            padding-bottom: 0.4rem;
-            margin-top: 2rem;
-            font-size: 1.4rem;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 1px solid var(--border-color);
         }
         h3 {
-            color: var(--accent);
-            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-size: 1.2rem;
             margin-top: 1.5rem;
         }
-        ul {
-            padding-left: 1.2rem;
+        p {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-top: 0;
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
         }
         li {
             margin-bottom: 0.5rem;
         }
-        .alert-box {
-            background-color: #ebf5fb;
-            border-left: 4px solid #3498db;
-            padding: 1rem;
-            border-radius: 4px;
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .block-info {
+            background-color: var(--bg-soft);
+            border-left: 4px solid var(--primary-color);
+            padding: 1.2rem;
+            border-radius: 0 8px 8px 0;
             margin: 1.5rem 0;
         }
-        .google-box {
-            background-color: #fef9e7;
-            border-left: 4px solid #f1c40f;
-            padding: 1rem;
-            border-radius: 4px;
-            margin: 1.5rem 0;
+        .google-requirement {
+            border: 1px solid #cbd5e1;
+            background-color: #f8fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 3rem;
         }
         footer {
+            margin-top: 4rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
             text-align: center;
-            padding: 2rem 1rem;
-            color: #7f8c8d;
+            color: #64748b;
             font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>Centro CS – Salud Integral</h1>
-        <p>Política de Privacidad de la Aplicación Móvil y Portal Web</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Política de Privacidad</h1>
+            <p class="meta-date"><strong>Centro CS – Salud Integral</strong> &middot; Última actualización: 7 de junio de 2026</p>
+        </header>
 
-    <main>
-        <div class="card">
-            <p><strong>Última actualización:</strong> 7 de junio de 2026</p>
-            <p>En Centro CS nos comprometemos a proteger su privacidad y tratar sus datos personales con la máxima transparencia, conforme al Reglamento (UE) 2016/679 (RGPD) y la normativa española vigente (LOPDGDD 3/2018).</p>
+        <p>En Centro CS nos comprometemos a proteger su privacidad y tratar sus datos personales con la máxima transparencia, conforme al <strong>Reglamento (UE) 2016/679 (RGPD)</strong> y la normativa española vigente.</p>
 
-            <h2>1. Responsable del Tratamiento</h2>
-            <p>En cumplimiento de la normativa vigente, le informamos que el responsable del tratamiento de sus datos personales es:</p>
-            <ul>
-                <li><strong>Denominación:</strong> Centro CS – Salud Integral</li>
-                <li><strong>Ubicación:</strong> Alhaurín de la Torre, Málaga, España</li>
-                <li><strong>Email de contacto:</strong> centrocsalhaurin@gmail.com</li>
-            </ul>
-
-            <h2>2. Datos Personales que Recogemos</h2>
-            <p>A través de nuestra aplicación y portal web, recogemos los siguientes datos personales:</p>
-            <ul>
-                <li><strong>Datos de identificación:</strong> Nombre y apellidos, DNI/NIE (opcional).</li>
-                <li><strong>Datos de contacto:</strong> Correo electrónico, número de teléfono.</li>
-                <li><strong>Datos de salud:</strong> Especialidad o tipo de servicio solicitado, historial de citas. Estos datos son considerados categoría especial según el RGPD y se tratan con medidas de seguridad reforzadas.</li>
-                <li><strong>Datos de uso:</strong> Información sobre el uso de la aplicación, dirección IP, tipo de dispositivo y sistema operativo, con fines estadísticos y de seguridad.</li>
-                <li><strong>Credenciales de acceso:</strong> Dirección de correo electrónico y contraseña cifrada para el acceso a la cuenta.</li>
-            </ul>
-
-            <h2>3. Finalidad y Base Jurídica del Tratamiento</h2>
-            <p>Tratamos sus datos personales para las siguientes finalidades:</p>
-            <ul>
-                <li><strong>Gestión de citas y reservas:</strong> Ejecución de un contrato (art. 6.1.b RGPD). Gestionar y confirmar sus reservas de citas con los profesionales del centro.</li>
-                <li><strong>Comunicaciones sobre su cita:</strong> Interés legítimo y ejecución del contrato. Envío de confirmaciones, recordatorios y notificaciones sobre modificaciones o cancelaciones.</li>
-                <li><strong>Gestión de la cuenta de usuario:</strong> Ejecución de un contrato (art. 6.1.b RGPD). Creación y gestión de su perfil en la plataforma.</li>
-                <li><strong>Mejora del servicio:</strong> Interés legítimo (art. 6.1.f RGPD). Análisis estadístico del uso de la plataforma para mejorar la experiencia del usuario.</li>
-                <li><strong>Cumplimiento de obligaciones legales:</strong> Obligación legal (art. 6.1.c RGPD). Conservación de registros exigidos por la normativa sanitaria y fiscal aplicable.</li>
-            </ul>
-
-            <h2>4. Plazo de Conservación</h2>
-            <p>Los datos personales se conservarán durante el tiempo necesario para la prestación del servicio y, una vez finalizada la relación, durante los plazos legalmente establecidos:</p>
-            <ul>
-                <li><strong>Datos de citas e historial:</strong> Mínimo 5 años, conforme a la normativa sanitaria vigente en España.</li>
-                <li><strong>Datos de la cuenta:</strong> Mientras la cuenta esté activa y, tras la baja, 3 años para atender posibles reclamaciones.</li>
-                <li><strong>Datos fiscales y de facturación:</strong> 5 años conforme a la normativa tributaria.</li>
-                <li><strong>Datos de acceso y logs de seguridad:</strong> Máximo 12 meses.</li>
-            </ul>
-
-            <h2>5. Sus Derechos</h2>
-            <p>De acuerdo con el RGPD y la LOPDGDD, usted tiene derecho a: Acceso, Rectificación, Supresión ("derecho al olvido"), Limitación del tratamiento, Portabilidad, Oposición y a la Revocación del consentimiento prestado en cualquier momento.</p>
-            <p>Asimismo, tiene derecho a presentar una reclamación ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank">www.aepd.es</a>) si considera que el tratamiento no se ajusta a la normativa.</p>
-            <p class="alert-box">Para ejercer sus derechos, puede contactarnos enviando un correo electrónico a <strong>centrocsalhaurin@gmail.com</strong> adjuntando una copia de su documento de identidad para verificar la titularidad.</p>
-
-            <h2>6. Seguridad de los Datos</h2>
-            <p>Centro CS implementa medidas técnicas y organizativas apropiadas para garantizar la seguridad de sus datos personales:</p>
-            <ul>
-                <li>Cifrado de datos en tránsito mediante protocolo TLS/HTTPS.</li>
-                <li>Almacenamiento seguro de contraseñas mediante algoritmos de hash robustos (bcrypt).</li>
-                <li>Autenticación segura gestionada a través de Supabase Auth.</li>
-                <li>Acceso restringido a los datos según roles y necesidades estrictas del servicio.</li>
-                <li>Auditorías y revisiones periódicas de seguridad.</li>
-            </ul>
-
-            <h2>7. Comunicación a Terceros y Servicios de Publicidad</h2>
-            <p>Con carácter general, no cedemos sus datos a terceros salvo obligación legal. Para la infraestructura del servicio contamos con los siguientes elementos bajo nuestro control directo:</p>
-            <ul>
-                <li><strong>Servidor VPS propio (UE):</strong> Almacenamiento de datos, base de datos PostgreSQL y autenticación. Software de código abierto autoalojado bajo control exclusivo de Centro CS en territorio de la Unión Europea.</li>
-                <li><strong>Proveedor de email transaccional:</strong> Envío automatizado de confirmaciones y recordatorios de citas mediante contrato de encargado del tratamiento bajo el RGPD.</li>
-            </ul>
-            
-            <h3>Servicios de publicidad (Google AdMob)</h3>
-            <p>La aplicación utiliza servicios de terceros que pueden recopilar información utilizada para identificarle con fines publicitarios:</p>
-            <ul>
-                <li><strong>Google AdMob:</strong> El SDK de AdMob recopila datos como el ID de publicidad de Google (AAID), identificadores del dispositivo y datos de rendimiento para mostrar anuncios personalizados o contextuales. Puede consultar la política de privacidad de este proveedor en: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Políticas de Privacidad de Google</a>.</li>
-            </ul>
-
-            <div class="google-box">
-                <h2>8. Eliminación de Cuenta y Datos (Requerimiento de Google Play)</h2>
-                <p>Si es usuario de la aplicación móvil de Centro CS, puede solicitar la eliminación de su cuenta de usuario y de todos los datos personales asociados en cualquier momento.</p>
-                <p><strong>Pasos para solicitar la eliminación:</strong></p>
-                <ol>
-                    <li>Envíe un correo electrónico a <strong>centrocsalhaurin@gmail.com</strong>.</li>
-                    <li>Indique en el asunto: <em>Eliminación de Cuenta - Centro CS</em>.</li>
-                    <li>Especifique en el mensaje la dirección de correo electrónico con la que se registró en la aplicación.</li>
-                </ol>
-                <p><strong>¿Qué datos se borran inmediatamente?</strong> Su credenciales de acceso (correo y contraseña cifrada), su perfil de usuario (nombre, apellidos, teléfono) y cualquier cita futura programada.</p>
-                <p><strong>¿Qué datos se conservan y por qué?</strong> De acuerdo con la legislación sanitaria española (Ley 41/2002 de autonomía del paciente), los registros e historial de citas y asistencias médicas o fisioterapéuticas ya realizadas deben conservarse obligatoriamente durante un plazo mínimo de 5 años. Estos datos quedarán bloqueados y protegidos, estando accesibles únicamente para cumplir con dicha obligación legal.</p>
-            </div>
+        <div class="contents-box">
+            <h3>Contenidos</h3>
+            <ol>
+                <li><a href="#responsable">1. Responsable del Tratamiento</a></li>
+                <li><a href="#datos-recogidos">2. Datos Personales que Recogemos</a></li>
+                <li><a href="#finalidad">3. Finalidad y Base Jurídica del Tratamiento</a></li>
+                <li><a href="#conservacion">4. Plazo de Conservación</a></li>
+                <li><a href="#derechos">5. Sus Derechos</a></li>
+                <li><a href="#seguridad">6. Seguridad de los Datos</a></li>
+                <li><a href="#terceros">7. Comunicación a Terceros y Publicidad</a></li>
+                <li><a href="#eliminacion">9. Eliminación de Cuenta y Datos (Requerimiento de Google Play)</a></li>
+            </ol>
         </div>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Centro CS – Salud Integral. Todos los derechos reservados.</p>
-    </footer>
+        <h2 id="responsable">1. Responsable del Tratamiento</h2>
+        <p>En cumplimiento del Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD) y de la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), le informamos que el responsable del tratamiento de sus datos personales es:</p>
+        <div class="block-info">
+            <strong>Centro CS – Salud Integral</strong><br>
+            Alhaurín de la Torre, Málaga, España<br>
+            <a href="mailto:centrocsalhaurin@gmail.com">centrocsalhaurin@gmail.com</a>
+        </div>
+
+        <h2 id="datos-recogidos">2. Datos Personales que Recogemos</h2>
+        <p>A través de nuestra aplicación y portal web, recogemos los siguientes datos personales:</p>
+        <ul>
+            <li><strong>Datos de identificación:</strong> Nombre y apellidos, DNI/NIE (opcional).</li>
+            <li><strong>Datos de contacto:</strong> Correo electrónico, número de teléfono.</li>
+            <li><strong>Datos de salud:</strong> Especialidad o tipo de servicio solicitado, historial de citas. Estos datos son considerados categoría especial según el RGPD y se tratan con medidas de seguridad reforzadas.</li>
+            <li><strong>Datos de uso:</strong> Información sobre el uso de la aplicación, dirección IP, tipo de dispositivo y sistema operativo, con fines estadísticos y de seguridad.</li>
+            <li><strong>Credenciales de acceso:</strong> Dirección de correo electrónico y contraseña cifrada para el acceso a la cuenta.</li>
+        </ul>
+
+        <h2 id="finalidad">3. Finalidad y Base Jurídica del Tratamiento</h2>
+        <p>Tratamos sus datos personales para las siguientes finalidades:</p>
+        
+        <h3>Gestión de citas y reservas</h3>
+        <p><em>Ejecución de un contrato (art. 6.1.b RGPD)</em><br>Gestionar y confirmar sus reservas de citas con los profesionales del centro.</p>
+
+        <h3>Comunicaciones sobre su cita</h3>
+        <p><em>Interés legítimo y ejecución del contrato</em><br>Envío de confirmaciones, recordatorios y notificaciones sobre modificaciones o cancelaciones.</p>
+
+        <h3>Gestión de la cuenta de usuario</h3>
+        <p><em>Ejecución de un contrato (art. 6.1.b RGPD)</em><br>Creación y gestión de su perfil en la plataforma.</p>
+
+        <h3>Mejora del servicio</h3>
+        <p><em>Interés legítimo (art. 6.1.f RGPD)</em><br>Análisis estadístico del uso de la plataforma para mejorar la experiencia del usuario.</p>
+
+        <h3>Cumplimiento de obligaciones legales</h3>
+        <p><em>Obligación legal (art. 6.1.c RGPD)</em><br>Conservación de registros exigidos por la normativa sanitaria y fiscal aplicable.</p>
+
+        <h2 id="conservacion">4. Plazo de Conservación</h2>
+        <p>Los datos personales se conservarán durante el tiempo necesario para la prestación del servicio y, una vez finalizada la relación, durante los plazos legalmente establecidos:</p>
+        <ul>
+            <li><strong>Datos de citas e historial:</strong> mínimo 5 años, conforme a la normativa sanitaria vigente en España.</li>
+            <li><strong>Datos de la cuenta:</strong> mientras la cuenta esté activa y, tras la baja, 3 años para atender posibles reclamaciones.</li>
+            <li><strong>Datos fiscales y de facturación:</strong> 5 años conforme a la normativa tributaria.</li>
+            <li><strong>Datos de acceso y logs de seguridad:</strong> máximo 12 meses.</li>
+        </ul>
+
+        <h2 id="derechos">5. Sus Derechos</h2>
+        <p>De acuerdo con el RGPD y la LOPDGDD, usted tiene derecho a: Acceso, Rectificación, Supresión ("derecho al olvido"), Limitación, Portabilidad, Oposición y a la Revocación del consentimiento.</p>
+        <p>Para ejercer sus derechos, puede contactarnos enviando un correo a <a href="mailto:centrocsalhaurin@gmail.com">centrocsalhaurin@gmail.com</a> adjuntando copia de su documento de identidad. Asimismo, tiene derecho a presentar una reclamación ante la AEPD (<a href="https://www.aepd.es" target="_blank">www.aepd.es</a>).</p>
+
+        <h2 id="seguridad">6. Seguridad de los Datos</h2>
+        <p>Centro CS implementa medidas técnicas y organizativas apropiadas para garantizar la seguridad de sus datos personales y evitar su pérdida, tratamiento o acceso no autorizado:</p>
+        <ul>
+            <li>Cifrado de datos en tránsito mediante protocolo TLS/HTTPS.</li>
+            <li>Almacenamiento seguro de contraseñas mediante algoritmos de hash robustos (bcrypt).</li>
+            <li>Autenticación segura gestionada a través de Supabase Auth.</li>
+            <li>Acceso restringido a los datos según roles y necesidades del servicio.</li>
+            <li>Auditorías y revisiones periódicas de seguridad.</li>
+        </ul>
+
+        <h2 id="terceros">7. Comunicación a Terceros y Publicidad</h2>
+        <p><strong>Infraestructura propia:</strong> Todos los datos personales se almacenan y procesan exclusivamente en servidores propios ubicados en la Unión Europea. No realizamos transferencias internacionales de datos ni cedemos información a empresas tecnológicas de terceros para su alojamiento básico.</p>
+        <p>Con carácter general, no cedemos sus datos a terceros salvo obligación legal. Para la prestación del servicio contamos con los siguientes elementos de infraestructura bajo nuestro control directo:</p>
+        <ul>
+            <li><strong>Servidor VPS propio (UE):</strong> Almacenamiento de datos, base de datos PostgreSQL y autenticación. Software de código abierto autoalojado bajo control exclusivo de Centro CS.</li>
+            <li><strong>Proveedor de email transaccional:</strong> Envío de confirmaciones y recordatorios de citas mediante acuerdo de encargado del tratamiento bajo el RGPD.</li>
+        </ul>
+        
+        <h3>Servicios de publicidad (Google AdMob)</h3>
+        <p>La aplicación móvil integra el SDK de <strong>Google AdMob</strong> para mostrar publicidad. Este componente recopila identificadores de publicidad del dispositivo (como el ID de publicidad de Android), datos de rendimiento y de uso con fines de personalización y analítica publicitaria. Puede conocer más sobre la gestión de datos de este servicio en las <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Políticas de Privacidad de Google</a>.</p>
+
+        <div id="eliminacion" class="google-requirement">
+            <h2>9. Eliminación de Cuenta y Datos (Requerimiento de Google Play)</h2>
+            <p>Si es usuario de la aplicación móvil de <strong>Centro CS</strong>, puede solicitar la eliminación de su cuenta de usuario y de todos los datos personales asociados en cualquier momento.</p>
+            <p><strong>Pasos para solicitar la eliminación:</strong></p>
+            <ol>
+                <li>Envíe un correo electrónico a <a href="mailto:grimnir6@gmail.com">grimnir6@gmail.com</a>.</li>
+                <li>Indique en el asunto: <code>Eliminación de Cuenta - Centro CS</code>.</li>
+                <li>Especifique en el mensaje el correo electrónico con el que se registró en la aplicación.</li>
+            </ol>
+            <p><strong>¿Qué datos se borran inmediatamente?</strong></p>
+            <ul>
+                <li>Sus credenciales de acceso (correo electrónico y contraseña cifrada).</li>
+                <li>Su perfil de usuario (nombre, apellidos y número de teléfono).</li>
+                <li>Cualquier cita futura programada que aún no haya ocurrido.</li>
+            </ul>
+            <p><strong>¿Qué datos se conservan y por qué?</strong></p>
+            <p>De acuerdo con la legislación sanitaria española (Ley 41/2002 de autonomía del paciente), los registros e historial de citas y asistencias médicas o fisioterapéuticas ya realizadas deben conservarse obligatoriamente durante un plazo mínimo de 5 años. Estos datos quedarán bloqueados y no serán utilizados para ningún otro fin más allá del cumplimiento legal.</p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Centro CS – Salud Integral. Todos los derechos reservados.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
