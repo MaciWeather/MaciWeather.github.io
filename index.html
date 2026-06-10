@@ -6,12 +6,12 @@
     <title>MaciWeather | Desarrollador de Aplicaciones</title>
     <style>
         :root {
-            --bg-pizarra: #1e252b;       /* Negro pizarra oscuro para el fondo */
-            --bg-card: #272e36;          /* Gris carbón para las tarjetas */
-            --dorado-principal: #c5a880; /* Dorado apagado / Oro viejo */
-            --dorado-suave: #e5d4bc;     /* Dorado claro para contrastes y textos destacados */
-            --texto-claro: #e2e8f0;      /* Blanco grisáceo para que la lectura sea cómoda */
-            --texto-mutado: #94a3b8;     /* Gris para descripciones secundarias */
+            --bg-pizarra: #1e252b;
+            --bg-card: #272e36;
+            --dorado-principal: #c5a880;
+            --dorado-suave: #e5d4bc;
+            --texto-claro: #e2e8f0;
+            --texto-mutado: #94a3b8;
         }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -27,7 +27,6 @@
         header {
             background-color: #171d22;
             border-bottom: 2px solid var(--dorado-principal);
-            color: white;
             text-align: center;
             padding: 3.5rem 1rem;
         }
@@ -85,19 +84,9 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.4);
             background: linear-gradient(135deg, var(--dorado-principal), #9a815c);
         }
-        .app-details {
-            flex: 1;
-        }
-        .app-details h3 {
-            margin: 0 0 0.3rem 0;
-            color: var(--dorado-suave);
-            font-size: 1.25rem;
-        }
-        .app-details p {
-            margin: 0 0 0.7rem 0;
-            color: var(--texto-claro);
-            font-size: 0.95rem;
-        }
+        .app-details { flex: 1; }
+        .app-details h3 { margin: 0 0 0.3rem 0; color: var(--dorado-suave); font-size: 1.25rem; }
+        .app-details p { margin: 0 0 0.7rem 0; color: var(--texto-claro); font-size: 0.95rem; }
         .links-geo a {
             color: var(--dorado-principal);
             text-decoration: none;
@@ -109,10 +98,7 @@
             transition: all 0.3s ease;
             display: inline-block;
         }
-        .links-geo a:hover {
-            background-color: var(--dorado-principal);
-            color: var(--bg-pizarra);
-        }
+        .links-geo a:hover { background-color: var(--dorado-principal); color: var(--bg-pizarra); }
         .email-contact {
             background: #171d22;
             padding: 1rem;
@@ -122,7 +108,6 @@
             display: inline-block;
             margin-top: 0.5rem;
             color: var(--dorado-suave);
-            letter-spacing: 0.5px;
         }
         footer {
             background-color: #171d22;
@@ -139,28 +124,28 @@
 
     <header>
         <h1>MaciWeather</h1>
-        <p>Estudio de Desarrollo de Aplicaciones Móviles</p>
+        <p>Portfolio de Desarrollo y Soporte Técnico</p>
     </header>
 
     <main>
         <section class="card">
-            <h2>Nuestras Aplicaciones</h2>
+            <h2>Proyectos Desarrollados</h2>
             
             <div class="app-item">
                 <div class="app-icon">🏥</div>
                 <div class="app-details">
                     <h3>Centro CS – Salud Integral</h3>
-                    <p>Aplicación oficial para la gestión inteligente de citas y reservas en el centro. Organiza tus sesiones, consulta tus horarios disponibles y mantén el control de tus asistencias de forma rápida y sencilla.</p>
+                    <p>Aplicación móvil oficial diseñada a medida para la gestión de citas de la clínica Centro CS. Optimiza las reservas, control de agendas y comunicación con los usuarios bajo la titularidad del centro.</p>
                     <div class="links-geo">
-                        <a href="/CentroCS/politica-de-privacidad.html">📄 Política de Privacidad de CentroCS</a>
+                        <a href="/CentroCS/politica-de-privacidad.html">📄 Ver Política de Privacidad de la App</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="card">
-            <h2>Soporte Técnico y Contacto</h2>
-            <p>Si experimentas incidencias técnicas, deseas enviarnos sugerencias de mejora o tienes dudas sobre la privacidad de tus datos, puedes ponerte en contacto con nosotros a través del siguiente correo:</p>
+            <h2>Soporte de Aplicaciones</h2>
+            <p>Si tienes problemas técnicos con la instalación o necesitas tramitar la baja de tu perfil de usuario de la app, puedes contactar con el soporte del desarrollador:</p>
             <div class="email-contact">📩 grimnir6@gmail.com</div>
         </section>
     </main>
