@@ -84,3 +84,90 @@
             flex-shrink: 0;
             box-shadow: 0 4px 12px rgba(0,0,0,0.4);
             background: linear-gradient(135deg, var(--dorado-principal), #9a815c);
+        }
+        .app-details {
+            flex: 1;
+        }
+        .app-details h3 {
+            margin: 0 0 0.3rem 0;
+            color: var(--dorado-suave);
+            font-size: 1.25rem;
+        }
+        .app-details p {
+            margin: 0 0 0.7rem 0;
+            color: var(--texto-claro);
+            font-size: 0.95rem;
+        }
+        .links-geo a {
+            color: var(--dorado-principal);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            border: 1px solid var(--dorado-principal);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .links-geo a:hover {
+            background-color: var(--dorado-principal);
+            color: var(--bg-pizarra);
+        }
+        .email-contact {
+            background: #171d22;
+            padding: 1rem;
+            border-left: 4px solid var(--dorado-principal);
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 0.5rem;
+            color: var(--dorado-suave);
+            letter-spacing: 0.5px;
+        }
+        footer {
+            background-color: #171d22;
+            color: var(--texto-mutado);
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: auto;
+            font-size: 0.9rem;
+            border-top: 1px solid #272e36;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MaciWeather</h1>
+        <p>Estudio de Desarrollo de Aplicaciones Móviles</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Nuestras Aplicaciones</h2>
+            
+            <div class="app-item">
+                <div class="app-icon">🏥</div>
+                <div class="app-details">
+                    <h3>Centro CS – Salud Integral</h3>
+                    <p>Aplicación móvil oficial diseñada a medida para la gestión inteligente de citas de la clínica Centro CS. Optimiza las reservas, el control de agendas y la comunicación bajo la titularidad y responsabilidad del centro.</p>
+                    <div class="links-geo">
+                        <a href="/CentroCS/politica-de-privacidad.html">📄 Política de Privacidad de CentroCS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Soporte Técnico y Contacto</h2>
+            <p>Si experimentas incidencias técnicas con la aplicación o tienes dudas relacionadas con su rendimiento, puedes ponerte en contacto con el soporte del desarrollador a través del siguiente correo electrónico:</p>
+            <div class="email-contact">📩 grimnir6@gmail.com</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MaciWeather. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
