@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - CentroCS</title>
+    <title>Política de Privacidad - CentroCS | MaciWeather</title>
     <style>
         :root {
-            --bg-pizarra: #1e252b;
-            --bg-card: #272e36;
-            --dorado-principal: #c5a880;
-            --dorado-suave: #e5d4bc;
-            --texto-claro: #e2e8f0;
-            --texto-mutado: #94a3b8;
+            --bg-pizarra: #1e252b;       /* Negro pizarra oscuro para el fondo */
+            --bg-card: #272e36;          /* Gris carbón para las tarjetas */
+            --dorado-principal: #c5a880; /* Dorado apagado / Oro viejo */
+            --dorado-suave: #e5d4bc;     /* Dorado claro para contrastes y textos destacados */
+            --texto-claro: #e2e8f0;      /* Blanco grisáceo para que la lectura sea cómoda */
+            --texto-mutado: #94a3b8;     /* Gris para descripciones secundarias */
             --borde-tarjeta: #333c47;
         }
         body {
@@ -28,6 +28,7 @@
         header {
             background-color: #171d22;
             border-bottom: 1px solid var(--borde-tarjeta);
+            color: white;
             text-align: center;
             padding: 2.5rem 1rem;
         }
@@ -51,7 +52,7 @@
             width: -webkit-fill-available;
         }
         .policy-intro {
-            background: rgba(197, 168, 128, 0.05);
+            background: rgba(197, 168, 128, 0.05); /* Sutil tinte dorado de fondo */
             padding: 1.5rem;
             border-radius: 8px;
             border: 1px solid var(--dorado-principal);
@@ -74,11 +75,27 @@
             border: 1px solid var(--borde-tarjeta);
             margin-bottom: 2.5rem;
         }
-        .contents-table h2 { border-bottom: none; margin-bottom: 1rem; }
-        .contents-table ul { list-style-type: none; padding: 0; margin: 0; }
-        .contents-table li { margin-bottom: 0.7rem; }
-        .contents-table a { color: var(--texto-claro); text-decoration: none; transition: color 0.3s ease; }
-        .contents-table a:hover { color: var(--dorado-principal); }
+        .contents-table h2 {
+            border-bottom: none;
+            margin-bottom: 1rem;
+        }
+        .contents-table ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .contents-table li {
+            margin-bottom: 0.7rem;
+        }
+        .contents-table a {
+            color: var(--texto-claro);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        .contents-table a:hover {
+            color: var(--dorado-principal);
+        }
         h2 {
             color: var(--dorado-principal);
             margin-top: 0;
@@ -87,10 +104,29 @@
             font-size: 1.6rem;
             letter-spacing: 0.5px;
         }
-        h3 { color: var(--dorado-suave); font-size: 1.25rem; margin-top: 2rem; }
-        ul, ol { padding-left: 1.5rem; }
-        li { margin-bottom: 0.5rem; }
-        a { color: var(--dorado-principal); text-decoration: underline; }
+        h3 {
+            color: var(--dorado-suave);
+            font-size: 1.25rem;
+            margin-top: 2rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        a {
+            color: var(--dorado-principal);
+            text-decoration: underline;
+        }
+        a:hover {
+            color: var(--dorado-suave);
+        }
         .block-info {
             background: #171d22;
             padding: 1.2rem;
@@ -98,6 +134,9 @@
             border-radius: 4px;
             margin: 1.5rem 0;
             color: var(--dorado-suave);
+        }
+        .block-info strong {
+            color: var(--texto-claro);
         }
         .block-highlight {
             border: 1px solid var(--dorado-principal);
@@ -120,14 +159,14 @@
 <body>
 
     <header>
-        <h1>CentroCS | Política de Privacidad</h1>
-        <p>Documento Legal para la Aplicación Móvil</p>
+        <h1>MaciWeather</h1>
+        <p>Developer Profile &bull; Soporte de Aplicaciones</p>
     </header>
 
     <main>
         <div class="policy-intro">
             <p><strong>Última actualización:</strong> 7 de junio de 2026</p>
-            <p>La presente política regula el tratamiento de datos de la aplicación móvil CentroCS. El titular y responsable del servicio es la propia clínica, siendo desarrollada la herramienta técnica por MaciWeather.</p>
+            <p>En Centro CS nos comprometemos a proteger su privacidad y tratar sus datos personales con la máxima transparencia, conforme al Reglamento (UE) 2016/679 (RGPD) y la normativa española vigente. La presente política regula el tratamiento de datos para la aplicación móvil provista por el desarrollador MaciWeather.</p>
         </div>
 
         <nav class="contents-table card">
@@ -139,70 +178,115 @@
                 <li><a href="#conservacion">4. Plazo de Conservación</a></li>
                 <li><a href="#derechos">5. Sus Derechos</a></li>
                 <li><a href="#seguridad">6. Seguridad de los Datos</a></li>
-                <li><a href="#terceros">7. Comunicación a Terceros y Infraestructura</a></li>
-                <li><a href="#anuncios">8. Servicios de Publicidad</a></li>
+                <li><a href="#terceros">7. Comunicación a Terceros y Transferencias Internacionales</a></li>
+                <li><a href="#anuncios">8. Servicios de Publicidad (AdMob)</a></li>
                 <li><a href="#eliminacion">9. Eliminación de Cuenta y Datos (Requerimiento de Google Play)</a></li>
             </ul>
         </nav>
 
         <section id="responsable" class="card">
             <h2>1. RESPONSABLE DEL TRATAMIENTO</h2>
-            <p>El responsable legítimo del tratamiento de los datos de salud e identificación recopilados para la gestión de las citas es la entidad titular de la clínica:</p>
+            <p>En cumplimiento del Reglamento (UE) 2016/679 (RGPD) y de la Ley Orgánica 3/2018 (LOPDGDD), le informamos que el responsable legítimo de la gestión de sus datos sanitarios y comerciales es la entidad del centro:</p>
             <div class="block-info">
                 <strong>Entidad:</strong> Centro CS – Salud Integral<br>
                 <strong>Ubicación:</strong> Alhaurín de la Torre, Málaga, España<br>
-                <strong>Email de contacto principal:</strong> centrocsalhaurin@gmail.com
+                <strong>Email:</strong> centrocsalhaurin@gmail.com
             </div>
         </section>
 
         <section id="datos-recogidos" class="card">
             <h2>2. DATOS PERSONALES QUE RECOGEMOS</h2>
-            <p>A través de CentroCS se recogen los siguientes datos bajo el control del Responsable:</p>
+            <p>A través de nuestra aplicación y portal web, recogemos los siguientes datos personales:</p>
             <ul>
-                <li><strong>Datos de identificación y contacto:</strong> Nombre, apellidos, teléfono y correo electrónico.</li>
-                <li><strong>Datos de salud:</strong> Especialidad médica solicitada e historial clínico de citas. Estos datos se procesan bajo estrictas medidas de confidencialidad sanitaria.</li>
-                <li><strong>Credenciales:</strong> Correo electrónico y contraseña encriptada para el acceso seguro.</li>
+                <li><strong>Datos de identificación:</strong> Nombre y apellidos, DNI/NIE (opcional).</li>
+                <li><strong>Datos de contacto:</strong> Correo electrónico, número de teléfono.</li>
+                <li><strong>Datos de salud:</strong> Especialidad o tipo de servicio solicitado, historial de citas. Estos datos son considerados categoría especial según el RGPD y se tratan con medidas de seguridad reforzadas.</li>
+                <li><strong>Datos de uso:</strong> Información sobre el uso de la aplicación, dirección IP, tipo de dispositivo y sistema operativo, con fines estadísticos y de seguridad.</li>
+                <li><strong>Credenciales de acceso:</strong> Dirección de correo electrónico y contraseña cifrada para el acceso a la cuenta.</li>
             </ul>
         </section>
 
         <section id="finalidad" class="card">
             <h2>3. FINALIDAD Y BASE JURÍDICA DEL TRATAMIENTO</h2>
-            <p>Los datos se tratan con el fin exclusivo de ejecutar la relación de prestación de servicios asistenciales (Art. 6.1.b del RGPD): gestión de reservas, envío de recordatorios de citas y cumplimiento de normativas sanitarias vigentes.</p>
+            <p>Tratamos sus datos personales para las siguientes finalidades bajo el marco normativo:</p>
+            
+            <h3>Gestión de citas y reservas</h3>
+            <p><em>Ejecución de un contrato (art. 6.1.b RGPD).</em> Gestionar y confirmar sus reservas de citas con los profesionales del centro.</p>
+
+            <h3>Comunicaciones sobre su cita</h3>
+            <p><em>Interés legítimo y ejecución del contrato.</em> Envío de confirmaciones, recordatorios y notificaciones sobre modificaciones o cancelaciones.</p>
+
+            <h3>Gestión de la cuenta de usuario</h3>
+            <p><em>Ejecución de un contrato (art. 6.1.b RGPD).</em> Creación y gestión de su perfil en la plataforma técnica.</p>
+
+            <h3>Mejora del servicio</h3>
+            <p><em>Interés legítimo (art. 6.1.f RGPD).</em> Análisis estadístico del uso de la plataforma para mejorar la experiencia del usuario.</p>
+
+            <h3>Cumplimiento de obligaciones legales</h3>
+            <p><em>Obligación legal (art. 6.1.c RGPD).</em> Conservación de registros exigidos por la normativa sanitaria y fiscal aplicable.</p>
         </section>
 
         <section id="conservacion" class="card">
             <h2>4. PLAZO DE CONSERVACIÓN</h2>
-            <p>Los historiales clínicos y registros de asistencia se conservarán bloqueados durante un **mínimo de 5 años**, tal y como exige la legislación sanitaria española (Ley 41/2002), incluso si el usuario solicita la baja de la aplicación móvil.</p>
+            <p>Los datos personales se conservarán durante el tiempo necesario para la prestación del servicio y, una vez finalizada la relación, durante los plazos legalmente establecidos:</p>
+            <ul>
+                <li><strong>Datos de citas e historial:</strong> mínimo 5 años, conforme a la normativa sanitaria vigente en España.</li>
+                <li><strong>Datos de la cuenta:</strong> mientras la cuenta esté activa y, tras la baja, 3 años para atender posibles reclamaciones.</li>
+                <li><strong>Datos fiscales y de facturación:</strong> 5 años conforme a la normativa tributaria.</li>
+                <li><strong>Datos de acceso y logs de seguridad:</strong> máximo 12 meses.</li>
+            </ul>
         </section>
 
         <section id="derechos" class="card">
             <h2>5. SUS DERECHOS</h2>
-            <p>Los usuarios pueden ejercer sus derechos de acceso, rectificación, supresión o limitación enviando un correo electrónico directamente al responsable a <strong>centrocsalhaurin@gmail.com</strong>, o ante la AEPD si fuera necesario.</p>
+            <p>De acuerdo con el RGPD y la LOPDGDD, usted tiene derecho a: Acceso, Rectificación, Supresión ("derecho al olvido"), Limitación, Portabilidad, Oposición y a la Revocación del consentimiento.</p>
+            <p>Para ejercer sus derechos de acceso o modificación sobre su historial médico, puede contactar al responsable enviando un correo a <strong>centrocsalhaurin@gmail.com</strong> adjuntando copia de su documento de identidad. Si considera que el tratamiento no se ajusta a la ley, puede reclamar ante la AEPD (<a href="https://www.aepd.es" target="_blank">www.aepd.es</a>).</p>
         </section>
 
         <section id="seguridad" class="card">
             <h2>6. SEGURIDAD DE LOS DATOS</h2>
-            <p>La aplicación utiliza sistemas de alta seguridad para la protección de la información, incluyendo conexiones cifradas TLS/HTTPS, encriptación hash de contraseñas y pasarelas seguras mediante Supabase Auth.</p>
+            <p>Centro CS, en coordinación con el entorno de desarrollo, implementa medidas técnicas y organizativas apropiadas para garantizar la seguridad de sus datos personales y evitar fugas o accesos no autorizados:</p>
+            <ul>
+                <li>Cifrado de datos en tránsito mediante protocolo TLS/HTTPS.</li>
+                <li>Almacenamiento seguro de contraseñas mediante algoritmos de hash robustos (bcrypt).</li>
+                <li>Autenticación segura gestionada a través del módulo Supabase Auth.</li>
+                <li>Acceso restringido a los datos según roles y necesidades del servicio sanitario.</li>
+                <li>Auditorías y revisiones periódicas de seguridad de la infraestructura.</li>
+            </ul>
         </section>
 
         <section id="terceros" class="card">
-            <h2>7. COMUNICACIÓN A TERCEROS Y INFRAESTRUCTURA</h2>
-            <p>Los datos se alojan de forma segura en servidores VPS dedicados dentro del territorio de la Unión Europea bajo el control directo del sistema del centro. No se realizan transferencias internacionales de datos comerciales.</p>
+            <h2>7. COMUNICACIÓN A TERCEROS Y TRANSFERENCIAS INTERNACIONALES</h2>
+            <p><strong>Infraestructura propia:</strong> Todos los datos personales se almacenan y procesan exclusivamente en servidores propios ubicados en la Unión Europea. No realizamos transferencias internacionales de datos ni cedemos información a empresas tecnológicas de terceros para su alojamiento general.</p>
+            <p>Con carácter general, no cedemos sus datos a terceros salvo obligación legal. Para la prestación del servicio contamos con los siguientes elementos de infraestructura bajo nuestro control directo:</p>
+            <ul>
+                <li><strong>Servidor VPS propio (UE):</strong> Almacenamiento de datos, base de datos PostgreSQL y autenticación. Software de código abierto autoalojado bajo control exclusivo de Centro CS. Garantía: Datos bajo control exclusivo del responsable del tratamiento, alojados en la UE.</li>
+                <li><strong>Proveedor de email transaccional:</strong> Envío de confirmaciones y recordatorios de citas mediante acuerdo de encargado del tratamiento bajo RGPD.</li>
+            </ul>
         </section>
 
         <section id="anuncios" class="card">
             <h2>8. SERVICIOS DE PUBLICIDAD</h2>
-            <p>Para el mantenimiento técnico del servicio de la aplicación, esta integra el SDK de <strong>Google AdMob</strong>. Google recopila identificadores de publicidad del dispositivo con fines de analítica y personalización de anuncios. Puede revisar sus condiciones en la web oficial de privacidad de Google.</p>
+            <p>Para el correcto sostenimiento técnico de la plataforma móvil, la aplicación integra el componente de monetización de <strong>Google AdMob</strong>. Este SDK de terceros recopila de manera automática metadatos técnicos del terminal tales como el ID de publicidad de Google (AAID), modelo del sistema operativo y estadísticas de rendimiento del anuncio con la finalidad de ofrecer publicidad contextualizada o analítica. Puede consultar el tratamiento completo del proveedor en la <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.</p>
         </section>
 
         <section id="eliminacion" class="card block-highlight">
             <h2>9. ELIMINACIÓN DE CUENTA Y DATOS (Requerimiento de Google Play)</h2>
-            <p>Si desea tramitar la baja de la aplicación móvil y la supresión de sus credenciales de acceso técnico inmediatas, puede solicitarlo enviando un correo electrónico:</p>
-            <div class="block-info">
-                <strong>Email de Soporte Técnico de la App:</strong> grimnir6@gmail.com<br>
-                <strong>Asunto:</strong> Eliminación de Cuenta - CentroCS
-            </div>
-            <p><em>Nota legal:</em> Sus datos de acceso y perfil se borrarán de inmediato. No obstante, las asistencias clínicas ya consolidadas permanecerán guardadas de forma segura en los servidores médicos durante el plazo legal de 5 años por imperativo de la ley de autonomía del paciente.</p>
+            <p>Si es usuario de la aplicación móvil de Centro CS, puede solicitar la eliminación inmediata de su perfil de acceso técnico de la plataforma en cualquier momento.</p>
+            <p><strong>Pasos para solicitar la eliminación de la cuenta:</strong></p>
+            <ol>
+                <li>Envíe un correo electrónico al soporte técnico del desarrollador: <strong>grimnir6@gmail.com</strong>.</li>
+                <li>Indique en el asunto exacto: <code>Eliminación de Cuenta - Centro CS</code>.</li>
+                <li>Especifique en el cuerpo del mensaje el correo electrónico con el que se registró en la aplicación móvil.</li>
+            </ol>
+            <p><strong>¿Qué datos se borran inmediatamente?</strong></p>
+            <ul>
+                <li>Sus credenciales de acceso técnico (correo electrónico y contraseña cifrada).</li>
+                <li>Su perfil directo de usuario dentro de la app (nombre, apellidos y número de teléfono).</li>
+                <li>Cualquier cita futura programada que aún no haya ocurrido en la agenda.</li>
+            </ul>
+            <p><strong>¿Qué datos se conservan obligatoriamente y por qué?</strong></p>
+            <p>De acuerdo con la legislación sanitaria española (Ley 41/2002 de autonomía del paciente), los registros e historial clínico de citas y asistencias médicas o fisioterapéuticas ya consolidadas y realizadas deben conservarse obligatoriamente durante un plazo mínimo de 5 años. Estos datos quedarán bloqueados y protegidos en la base de datos principal, estando accesibles única y exclusivamente para inspecciones o requerimientos legales, quedando inutilizados para cualquier otro fin ordinario de la app.</p>
         </section>
     </main>
 
