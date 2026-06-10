@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaciWeather | Desarrollador de Aplicaciones</title>
+    <style>
+        :root {
+            --bg-pizarra: #1e252b;       /* Negro pizarra oscuro para el fondo */
+            --bg-card: #272e36;          /* Gris carbón para las tarjetas */
+            --dorado-principal: #c5a880; /* Dorado apagado / Oro viejo */
+            --dorado-suave: #e5d4bc;     /* Dorado claro para contrastes y textos destacados */
+            --texto-claro: #e2e8f0;      /* Blanco grisáceo para que la lectura sea cómoda */
+            --texto-mutado: #94a3b8;     /* Gris para descripciones secundarias */
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-pizarra);
+            color: var(--texto-claro);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #171d22;
+            border-bottom: 2px solid var(--dorado-principal);
+            color: white;
+            text-align: center;
+            padding: 3.5rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            color: var(--dorado-principal);
+            text-transform: uppercase;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            color: var(--texto-mutado);
+        }
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            width: -webkit-fill-available;
+        }
+        .card {
+            background: var(--bg-card);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid #333c47;
+        }
+        h2 {
+            color: var(--dorado-principal);
+            margin-top: 0;
+            border-bottom: 1px solid #333c47;
+            padding-bottom: 0.5rem;
+            font-size: 1.4rem;
+            letter-spacing: 0.5px;
+        }
+        .app-item {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding: 1rem 0;
+        }
+        .app-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--bg-card);
+            font-size: 2rem;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            background: linear-gradient(135deg, var(--dorado-principal), #9a815c);
+        }
+        .app-details {
+            flex: 1;
+        }
+        .app-details h3 {
+            margin: 0 0 0.3rem 0;
+            color: var(--dorado-suave);
+            font-size: 1.25rem;
+        }
+        .app-details p {
+            margin: 0 0 0.7rem 0;
+            color: var(--texto-claro);
+            font-size: 0.95rem;
+        }
+        .links-geo a {
+            color: var(--dorado-principal);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: bold;
+            border: 1px solid var(--dorado-principal);
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        .links-geo a:hover {
+            background-color: var(--dorado-principal);
+            color: var(--bg-pizarra);
+        }
+        .email-contact {
+            background: #171d22;
+            padding: 1rem;
+            border-left: 4px solid var(--dorado-principal);
+            border-radius: 4px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top
