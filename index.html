@@ -9,7 +9,7 @@
             --bg-pizarra: #1e252b;       /* Negro pizarra oscuro para el fondo */
             --bg-card: #272e36;          /* Gris carbón para las tarjetas */
             --dorado-principal: #c5a880; /* Dorado apagado / Oro viejo */
-            --dorado-suave: #e5d4bc;     /* Dorado claro para contrastes y textos destacados */
+            --dorado-suave: #e5d4bc;      /* Dorado claro para contrastes y textos destacados */
             --texto-claro: #e2e8f0;      /* Blanco grisáceo para que la lectura sea cómoda */
             --texto-mutado: #94a3b8;     /* Gris para descripciones secundarias */
         }
@@ -71,6 +71,9 @@
             align-items: center;
             gap: 1.5rem;
             padding: 1rem 0;
+        }
+        .app-item:not(:last-child) {
+            border-bottom: 1px solid #333c47;
         }
         .app-icon {
             width: 70px;
@@ -153,6 +156,17 @@
                     <p>Aplicación móvil oficial diseñada a medida para la gestión inteligente de citas de la clínica Centro CS. Optimiza las reservas, el control de agendas y la comunicación bajo la titularidad y responsabilidad del centro.</p>
                     <div class="links-geo">
                         <a href="/CentroCS/politica-de-privacidad.html">📄 Política de Privacidad de CentroCS</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-item">
+                <div class="app-icon">🖨️</div>
+                <div class="app-details">
+                    <h3>Calculadora de costes 3D - VETA</h3>
+                    <p>Herramienta práctica orientada a la impresión 3D para calcular de forma precisa costes de materiales, tiempos y consumos eléctricos por proyecto. Funciona de manera completamente local en el dispositivo del usuario.</p>
+                    <div class="links-geo">
+                        <a href="/veta/privacy-policy.html">📄 Política de Privacidad de VETA</a>
                     </div>
                 </div>
             </div>
