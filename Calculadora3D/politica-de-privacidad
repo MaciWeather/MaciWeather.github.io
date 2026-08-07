@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Calculadora de costes 3D - VETA | MaciWeather</title>
+    <style>
+        :root {
+            --bg-pizarra: #1e252b;
+            --bg-card: #272e36;
+            --dorado-principal: #c5a880;
+            --dorado-suave: #e5d4bc;
+            --texto-claro: #e2e8f0;
+            --texto-mutado: #94a3b8;
+            --borde-tarjeta: #333c47;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-pizarra);
+            color: var(--texto-claro);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: #171d22;
+            border-bottom: 1px solid var(--borde-tarjeta);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+            color: var(--dorado-principal);
+            text-transform: uppercase;
+        }
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            color: var(--texto-mutado);
+        }
+        main {
+            flex: 1;
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .policy-intro {
+            background: rgba(197, 168, 128, 0.05);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--dorado-principal);
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--dorado-suave);
+        }
+        .card {
+            background: var(--bg-card);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid var(--borde-tarjeta);
+        }
+        h2 {
+            color: var(--dorado-principal);
+            margin-top: 0;
+            border-bottom: 1px solid var(--borde-tarjeta);
+            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        p { margin-bottom: 1rem; text-align: justify; }
+        ul { margin-bottom: 1rem; padding-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+        a { color: var(--dorado-principal); text-decoration: underline; }
+        a:hover { color: var(--dorado-suave); }
+        footer {
+            background-color: #171d22;
+            color: var(--texto-mutado);
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: auto;
+            font-size: 0.9rem;
+            border-top: 1px solid var(--borde-tarjeta);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Política de Privacidad - VETA</h1>
+        <p>Calculadora de costes 3D &bull; MaciWeather</p>
+    </header>
+
+    <main>
+        <div class="policy-intro">
+            <p><strong>Última actualización:</strong> 7 de agosto de 2026</p>
+            <p>En MaciWeather valoramos su privacidad. La aplicación <strong>Calculadora de costes 3D - VETA</strong> ha sido diseñada bajo principios de privacidad desde el diseño, garantizando que sus datos permanezcan bajo su control total.</p>
+        </div>
+
+        <section class="card">
+            <h2>1. PRIVACIDAD Y DATOS PERSONALES</h2>
+            <p>Esta aplicación <strong>no recopila, almacena ni transmite ningún dato personal</strong> de los usuarios. No existen registros de cuenta, ni servidores externos donde se envíe información. Toda la operativa de la aplicación (cálculos, datos de materiales, perfiles de impresión) se realiza y almacena de manera local exclusivamente en el dispositivo del usuario.</p>
+        </section>
+
+        <section class="card">
+            <h2>2. PUBLICIDAD (Google AdMob)</h2>
+            <p>La aplicación integra el SDK de <strong>Google AdMob</strong> para permitir su descarga gratuita. Este servicio de publicidad de terceros puede recopilar automáticamente ciertos metadatos técnicos del dispositivo para mostrar anuncios contextuales, tales como:</p>
+            <ul>
+                <li>ID de publicidad (AAID).</li>
+                <li>Modelo del dispositivo y sistema operativo.</li>
+                <li>Información básica de uso técnico con fines estadísticos y de rendimiento publicitario.</li>
+            </ul>
+            <p>Puede consultar cómo Google trata estos datos en su <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.</p>
+        </section>
+
+        <section class="card">
+            <h2>3. CONTROL DE DATOS</h2>
+            <p>Dado que la aplicación funciona exclusivamente en local, no existe una base de datos centralizada. Si el usuario desea eliminar cualquier rastro de la aplicación, basta con desinstalarla del dispositivo. Al desinstalar la aplicación, todos los datos locales se eliminan automáticamente de forma irreversible por el sistema operativo.</p>
+        </section>
+
+        <section class="card">
+            <h2>4. CONTACTO</h2>
+            <p>Si tiene alguna pregunta sobre esta política, puede ponerse en contacto con el desarrollador a través del perfil de GitHub donde se aloja esta documentación o mediante los canales de soporte disponibles en la Google Play Store.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MaciWeather. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
